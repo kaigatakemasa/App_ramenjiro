@@ -1,25 +1,38 @@
 
  <div><%=attachment_image_tag @shop, :shop_image, fallback: "no_image.png", class: "s-image" %></div>
 
- <div class="s-main `**clearfix**`">
- 	<iframe class="s-map" src="<%= @shop.map_url %>" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
- 	<div class="s-infomation">
-	 	<p class="s-name"><%= @shop.shop_name %></p>
-	 		<p class="ss-inf">昼の部　<%= @shop.daytime_department %></p>
+ <p class="s-name"><%= @shop.shop_name %></p>
+
+<ul class="tab">
+<li class="active aaaaa">基本情報</li>
+<li>アクセス</li>
+<li>Twitter</li>
+</ul>
+
+<div class="tabContent active">
+	<p class="ss-inf">昼の部　<%= @shop.daytime_department %></p>
 	 		<p class="ss-inf">夜の部　<%= @shop.night_department %></p>
-	 		<p class="ss-inf">〒<%= @shop.postal_code %>  <%= @shop.shop_address %></p>
-	</div>
- </div>
+	<%= simple_format(@shop.shop_information) %></div>
 
- <div class="information">
- 	<%= simple_format(@shop.shop_information) %>
+<div class="tabContent">
+	<iframe class="s-map" src="<%= @shop.map_url %>" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	 		<p class="ss-inf">〒<%= @shop.postal_code %>  <%= @shop.shop_address %></p></div>
+    </div>
 
- </div>
-
-<a class="twitter-timeline" data-width="850" data-height="600" href=<%= @shop.twitter_url %>>Tweets by <%= @shop.shop_name %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="tabContent"><a class="twitter-timeline" data-width="850" data-height="600" href=<%= @shop.twitter_url %>>Tweets by <%= @shop.shop_name %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
 
 
-
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function() {
+$(".tab li").click(function() {
+var num = $(".tab li").index(this);
+$(".tabContent").removeClass('active');
+$(".tabContent").eq(num).addClass('active');
+$(".tab li").removeClass('active');
+$(this).addClass('active')
+});
+});
+</script>
 

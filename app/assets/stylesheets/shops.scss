@@ -134,9 +134,9 @@ background-image: url(/images/二郎.jpg);
 }
 
 .s-name{
-	padding-left: 30px;
+	margin-left: 10%;
 	padding-top: 30px;
-	font-size: 45px;
+	font-size: 55px;
 	padding-bottom: 25px;
 }
 .s-image{
@@ -241,4 +241,46 @@ background-image: url(/images/二郎.jpg);
 	border-radius: 5px 5px 5px 5px;
 	border: solid 1px black;
 
+}
+
+
+ul.tab {
+list-style: none;
+
+}
+li.aaaaa{
+	margin-left: 12%;
+	
+
+}
+
+ul.tab li {
+margin-bottom: 10px;
+width: 80px;
+text-align: center;
+float: left;
+margin-right: 10px;
+padding: 10px;
+background-color: #f2f2f2;
+color: #666;
+cursor: pointer;
+}
+ul.tab li:hover {
+color: #FF0000;
+}
+ul.tab li.active {
+background-color: #999;
+color: #fff;
+}
+div.tabContent {
+margin: 0 auto;
+clear: both;
+border: 1px solid #ccc;
+padding: 20px;
+width: 80%;
+height: auto;
+display: none;
+}
+div.active {
+display: block;
 }
