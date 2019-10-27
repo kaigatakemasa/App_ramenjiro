@@ -14,19 +14,28 @@
 }
 
 .image1 {
-background-image: url(/images/二郎.jpg);
+//background-image: url(/images/二郎.jpg);
+background-image: image-url("二郎.jpg");
 }
 .image2 {
-background-image: url(/images/mita.jpg);
+//background-image: url(/images/mita.jpg);
+background-image: image-url("mita.jpg");
+
 }
 .image3 {
-background-image: url(/images/hasi.jpg);
+//background-image: url(/images/hasi.jpg);
+background-image: image-url("hasi.jpg");
+
 }
 .image4 {
-background-image: url(/images/tamago.jpg);
+//background-image: url(/images/tamago.jpg);
+background-image: image-url("tamago.jpg");
+
 }
 .image5 {
-background-image: url(/images/nabejoro.jpg);
+//background-image: url(/images/二郎.jpg);
+background-image: image-url("二郎.jpg");
+
 }
 
 
