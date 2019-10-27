@@ -1,0 +1,41 @@
+
+
+<div>
+	<%= form_for @shop, url:shop_path(@shop) do |s| %>
+
+		<p class="n-p"><label class="n-label">店舗名</label>
+		  <%= s.text_field :shop_name, class: "n-name" %></p>
+
+		  <p class="n-p"><label class="n-label">郵便番号</label>
+		      <%= s.text_field :postal_code, class: "n-postal" %></p>
+
+		    <p class="n-p"><label class="n-label">住所</label>
+		      <%= s.text_field :shop_address, class: "n-address" %></p>
+
+		        <p class="n-p"><label class="n-label">昼の部</label>
+		          <%= s.text_field :daytime_department, class: "n-daytime" %></p>
+
+		            <p class="n-p"><label class="n-label">夜の部</label>
+		              <%= s.text_field :night_department, class: "n-night" %></p>
+
+						  <p class="n-p"><label class="n-label">Twitter URL</label>
+						    <%= s.text_field :twitter_url, class: "twitter-url" %></p>
+
+						    <p class="n-p"><label class="n-label">GoogleMap URL</label>
+						      <%= s.text_field :map_url, class: "map-url" %></p>
+
+								 <p class="n-p"><label class="n-label">店舗写真</label>
+		         　　　　　　　　　　　<%= s.attachment_field :shop_image %></p>
+
+							      <p class="n-p"><label class="n-label">店舗情報</label>
+							        <%= s.text_area :shop_information, class: "n-infomation" %></p>
+
+							        <p><%= s.submit "更新", class: "touroku", :style=>"color:black;" %></p>
+
+							      <% end %>
+	                            </div>
+
+
+
+
+

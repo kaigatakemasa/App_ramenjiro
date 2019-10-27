@@ -1,0 +1,51 @@
+
+
+
+
+<div class="grad-wrap">
+    <span class="grad-trigger"></span>
+    <div class="grad-item">
+        <p>ラーメン二郎とは東京の三田を本店とし、各地に支店を持つラーメン屋である。<rb>
+	    品揃えは豚の出汁が良く出た醤油味のラーメン一点のみ。
+		まずは出てきたラーメンを見て、普通のラーメンの２倍以上はある麺の量に圧倒されることだろう。そしてその麺は、モゾモゾ した極太麺である。スープは、ギトギト脂ぎったスープ。そして、ここではぶたと呼ばれる大ぶりで厚切りチャーシューが特徴である。これに茹でたモヤシとキャベツが加えられる。
+		また、好みによってニンニクの有無、野菜の多さ、味の辛さ、脂の量などが調節できるトッピングがある。
+		店構えもカウンターのみの十数席程で狭苦しく、お世辞にもキレイとは言えない店内である。僕は余計なものには手を掛け ず、ラーメンの味に集中しているためと理解しているのだが。
+		店員は店主と助手のみ。店主自らが目の前でラーメンをつくってくれる。
+		そんなこんなで初めて食べた人は大抵、その盛りの豪快さや、味のドギツサに圧倒されて、もう二度と食うものかと思うそう である。しかし、しばらくすると何故かしらまた食べたくなる不思議なラーメンなのである。大盛の麺を休み無く胃に詰め込んで、「アー美味かった。ご馳走さん。」といって帰る、大食い男向けのラーメンなのでである。
+		だが、好き嫌いがハッキリ分かれるラーメンでもある。
+		最近流行りの、舌全体でコダワリを味わって食べるようなラーメンとは違うのだ。事実、残念だが女性客は少ない。
+		しかし、ハマレバ、二度と抜け出せない魔力を持ったラーメンでもある。
+		さあ、あなたも禁断の世界の扉をくぐってみませんか？
+</p>
+    </div>
+</div>
+<script>
+	var itemHeights = [];
+var returnHeight;
+/*
+	$(function(){
+      console.log("1111");
+  $(".grad-item").each(function(){ //ターゲット(縮めるアイテム)
+            console.log("2222");
+    var thisHeight = $(this).height(); //ターゲットの高さを取得
+    itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
+    $(this).addClass("is-hide"); //CSSで指定した高さにする
+                console.log("333");
+    returnHeight = $(this).height(); //is-hideの高さを取得
+  });
+});
+*/
+$(".grad-trigger").click(function(){ //トリガーをクリックしたら
+                  console.log("444");
+  if(!$(this).hasClass("is-show")) {
+                  console.log("5555");
+    var index = $(this).index(".grad-trigger"); //トリガーが何個目か
+    var addHeight = itemHeights[index]; //個数に対応する高さを取得
+    $(this).addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
+  } else {
+    $(this).removeClass("is-show").next().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
+  }
+});
+</script>
+
+

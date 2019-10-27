@@ -1,0 +1,210 @@
+// Place all the styles related to the shops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#container{
+    height: 320px;
+}
+
+.i-main{
+	//width: auto;
+	//height: auto;
+}
+
+.image1 {
+background-image: url(二郎.jpg);
+}
+.image2 {
+background-image: url(mita.jpg);
+}
+.image3 {
+background-image: url(hasi.jpg);
+}
+.image4 {
+background-image: url(tamago.jpg);
+}
+.image5 {
+background-image: url(nabejoro.jpg);
+}
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.i-shop{
+	float: left;
+	width: 20%;
+	height: 600px;
+	padding: 0.5em 1em;
+    margin: 2em 2em;
+    background: -moz-linear-gradient(#ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: #FFF;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 65px;
+}
+
+.i-shopname{
+	
+}
+
+.s-link{
+	text-decoration: none;
+}
+
+.main{
+	width: 100%;
+	height: auto;
+
+}
+
+.i-newstitle{
+	padding-right: 350px;
+	padding-top: 5px;
+
+}
+
+.toukoubi{
+
+
+}
+
+.i-news{
+	background-color: white;
+	float: left;
+	width: 55%;
+	border: 1px solid black;
+	border-radius: 8px 8px 8px 8px;
+	margin-left: 50px;
+	margin-top: 65px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+
+
+}
+
+.i-twitter{
+	background-color: white;
+	padding-top: 20px;
+	margin-top: 50px;
+	margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 8px 8px 8px 8px;
+	float: left;
+	width: 55%;
+	height: auto;
+	display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.s-main{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.s-name{
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+.s-image{
+	width: 100%;
+	height: 300px;
+}
+
+.information{
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.s-map{
+	margin-left: 50px;
+
+}
+
+.twitter-timeline{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.n-p{
+	margin-top: 18px;
+	margin-left: 18px;
+}
+
+.n-label{
+	width: 100px;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+}
+
+.n-name{
+	width: 250px;
+	font-size: 14px;
+	height: 21px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}
+
+.n-address{
+	width: 400px;
+	font-size: 14px;
+	height: 21px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}
+
+.n-daytime{
+	width: 350px;
+	font-size: 14px;
+	height: 21px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}
+
+.n-night{
+	width: 350px;
+	font-size: 14px;
+	height: 21px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}
+
+.twitter-url{
+	width: 600px;
+	font-size: 14px;
+	height: 21px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}
+
+.n-infomation{
+	font-size: 14px;
+	width: 800px;
+	height: 500px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.touroku{
+	width: 80px;
+	height: 60px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px black;
+
+}

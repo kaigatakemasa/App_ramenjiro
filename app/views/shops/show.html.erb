@@ -1,0 +1,18 @@
+
+ <div><%=attachment_image_tag @shop, :shop_image, fallback: "no_image.png", class: "s-image" %></div>
+
+ <div class="s-main">
+ 	<p class="s-name"><%= @shop.shop_name %><p>
+ 		<p>昼の部　<%= @shop.daytime_department %>　　夜の部　<%= @shop.night_department %></p>
+ 		<p><%= @shop.postal_code %>  <%= @shop.shop_address %></p>
+ </div>
+
+ <div class="information">
+ 	<%= simple_format(@shop.shop_information) %>
+
+ </div>
+
+ <iframe class="s-map" src="<%= @shop.map_url %>" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+<a class="twitter-timeline" data-width="700" data-height="400" href=<%= @shop.twitter_url %>>Tweets by <%= @shop.shop_name %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+

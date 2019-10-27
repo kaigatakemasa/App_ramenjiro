@@ -1,0 +1,41 @@
+<p class="goikennitiran">ご意見一覧</p>
+<p class="oi-home"><%= link_to(shops_path) do %>Home</p>
+<% end %>
+ <div class="i-shop">
+           <table>
+               <thead>
+                   <tr>
+                       <th class="i-tenpo">メニュー</th>
+                   </tr>
+               </thead>
+               <% @shops.each do |s| %>
+               <tbody>
+                   <tr>
+                       <td class="i-shopname">・<%= link_to(shop_path(s.id)) do %>
+                        <%= s.shop_name %></td>
+                        <% end %>
+                   </tr>
+               </tbody>
+               <% end %>
+           </table>
+        </div>
+<div class="oi-itiran">
+<table class="news_table">
+	<thead>
+		<tr class="">
+			<th class="oi-title">件名</th>
+			<th class="oi-days">投稿日</th>
+		</tr>
+	</thead>
+	<% @opinions.each do |o| %>
+	<tbody>
+		<tr class="adb">
+			<td class="oii-title"><%= link_to(opinion_path(o.id)) do %>
+				<%= o.opinion_title %></td>
+			<% end %>
+			<td class="oii-days"><%= o.created_at.strftime("%Y-%m-%d") %></td>
+		    </tr>
+	    </tbody>
+	<% end %>
+  </table>
+</div>

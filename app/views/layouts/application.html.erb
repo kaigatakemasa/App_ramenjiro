@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ramenjiro</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+      <header id="header" class="">
+        <div class="head-top">
+          <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="head-bottom">
+
+          <% if admin_user_signed_in? %>
+
+            <ul class="head-ul">
+              <li class="av-list-item"><%= link_to 'Top page', shops_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'News一覧', news_index_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to '意見一覧', opinions_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to '店舗新規作成', new_shop_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'ログアウト', destroy_admin_user_session_path, method: :delete, :style=>"color:black;",class: "link-to" %></li>
+
+          <% else %>
+
+            <ul class="head-ul">
+              <li class="av-list-item"><%= link_to 'Top', shops_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'News', news_index_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'About', about_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to '初めての方へ', beginner_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'ご意見フォーム', new_opinion_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+          </ul>
+         <% end %>
+        </div>
+      </header><!-- /header -->
+    <%= yield %>
+  </body>
+</html>

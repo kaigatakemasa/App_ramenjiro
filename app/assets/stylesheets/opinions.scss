@@ -1,0 +1,169 @@
+// Place all the styles related to the opinions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.opinion-new{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,.75);
+  box-shadow: 0 1em 2em -1em rgba(0,0,0,.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+
+.goiken-form{
+	width: 300px;
+	margin: 0 auto;
+	border: 1px black solid;
+	//border-radius: 5px 5px 5px 5px;
+
+}
+
+.o-o{
+	width: 50%;
+	margin: 0 auto;
+	border: solid black 1px;
+
+}
+
+.oo-label{
+}
+
+.o-label{
+
+}
+
+.o-opinion{
+	width: 300px;
+	height: 22px;
+	font-size: 17px;
+	padding-top: 5px;
+	margin-bottom: 30px;
+}
+
+.o-text{
+	width: 400px;
+	height: 300px;
+	font-size: 17px;
+
+}
+
+.goikennitiran{
+	margin-top: 40px;
+	margin-left: 30px;
+	font-size: 32px;
+}
+
+.oi-home{
+	margin-left: 30px;
+}
+
+.o-touroku{
+	font-size: 18px;
+	border: black 1px solid;
+	border-radius: 7px 7px 7px 7px;
+	margin: 0 auto;
+
+}
+
+.oi-itiran{
+	width: 50%;
+	height: auto;
+	margin-left: 37%;
+	margin-top: 80px;
+	border: 1px black solid;
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+.adb{
+	//border-bottom: 1px black solid;
+}
+
+.oi-title{
+	padding-left: 35px;
+	padding-right: 300px;
+
+
+}
+
+.oi-days{
+
+}
+
+.oii-title{
+	padding-left: 35px;
+	padding-right: 300px;
+	border-bottom: 1px black solid;
+
+}
+
+.oii-days{
+	border-bottom: 1px black solid;
+
+}
+
+.grad-wrap {
+  position: relative;
+  width: 100%;
+}
+.grad-wrap + .grad-wrap {
+  margin-top: 40px;
+}
+.grad-trigger {
+	z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 148px;
+    margin: auto;
+    padding: .5em 0;
+    border-radius: 2px;
+    background: #009e8f;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s ease;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+  /*ボタンのスタイルはご自由にどうぞ*/
+}
+.grad-trigger::after {
+  content: "続きを読む" /*クリック前のボタンのラベル*/
+}
+.grad-trigger .fa {
+  margin-right: .5em;
+}
+.grad-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 75%;
+}
+.grad-item.is-hide {
+  height: 80px; /*隠した後の高さ*/
+}
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 40px; /*グラデーションで隠す高さ*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+}
+.grad-trigger.is-show {
+  bottom: -2em;
+}
+.grad-trigger.is-show::after {
+}

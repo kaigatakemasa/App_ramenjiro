@@ -1,0 +1,78 @@
+// Place all the styles related to the news controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jiro-news-title{
+	text-align: center;
+	font-size: 33px;
+
+}
+
+.top-link{
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+.top{
+	text-decoration: none;
+}
+
+.main-news{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.news-content{
+	width: 25%;
+	height: auto;
+	display: inline-block;
+	margin-left: 6%;
+	margin-bottom: 30px;
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+	border-radius: 5px;
+}
+
+.nn-title{
+	width: 85%;
+	height: 80px;
+	font-size: 27px;
+	margin: 0 auto;
+	padding-top: 10px;
+
+}
+
+.n-next{
+	display: block;
+	background-color: skyblue;
+	text-align: center;
+	padding-left: 15px;
+	font-size: 19px;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ii-news{
+	display: block;
+	width: 90%;
+	height: 130px;
+	margin: 0 auto;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-wrap: break-word;
+
+}
+
+.ii-time{
+	text-align: right;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
+.page{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 22px;
+}

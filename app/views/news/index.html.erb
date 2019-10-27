@@ -1,0 +1,23 @@
+<p class="jiro-news-title">ラーメン二郎最新ニュース</p>
+<p class="top-link"><%= link_to 'Top',shops_path, class: "top" %> | <%= link_to '',shops_path, class: "top" %></p>
+<div class="main-news">
+	<% @newses.each do |n| %>
+	<div class="news-content">
+		<h2 class="nn-title">
+			<%= link_to(news_path(n.id),class: 's-link') do %>
+			    <%= n.news_title %></td>
+		    <% end %>
+		</h2>
+
+		 <span class="ii-news"><%= n.latest_news %></span>
+
+		 <p class="ii-time"><%= n.created_at.strftime("%Y-%m-%d") %></p>
+
+		 <p><%= link_to '続きを読む　＞',news_path(n.id), class: "n-next",:style=>"color:white;" %></p>
+
+		</div>
+
+	<% end %>
+</div>
+
+<div class="page"><%= paginate(@newses) %></div>

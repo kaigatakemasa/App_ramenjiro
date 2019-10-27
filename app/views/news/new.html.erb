@@ -1,0 +1,12 @@
+
+<div>
+  <p class="news">News新規投稿</p>
+	<%= form_for @news, url:news_index_path do |s| %>
+	  <p class="new-p"><label class="n-title">タイトル</label>
+		<%= s.text_field :news_title, class: "nn-title" %></p>
+		  <p class="new-p"><label class="n-news">本文</label>
+		    <%= s.text_area :latest_news, class: "nn-news" %></p>
+		    <p><%= s.submit "記事を作成", class: "sakusei", :style=>"color:black;" %></p>
+
+	<% end %>
+</div>

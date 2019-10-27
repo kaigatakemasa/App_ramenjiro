@@ -1,0 +1,3 @@
+class ShopImage < ApplicationRecord
+
+end

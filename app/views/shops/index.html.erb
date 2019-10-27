@@ -1,0 +1,62 @@
+
+
+    <div id="container">
+        <div id="theTarget">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+            <div class="image4"></div>
+            <div class="image5"></div>
+          </div>
+        </div>
+
+        <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+
+    <div class="main clearfix">
+        <div class="i-shop">
+           <table>
+               <thead>
+                   <tr>
+                       <th class="i-tenpo">店舗一覧</th>
+                   </tr>
+               </thead>
+               <% @shops.each do |s| %>
+               <tbody>
+                   <tr>
+                       <td class="i-shopname">・<%= link_to(shop_path(s.id),class: 's-link') do %>
+                        <%= s.shop_name %></td>
+                        <% end %>
+                   </tr>
+               </tbody>
+               <% end %>
+           </table>
+        </div>
+
+        <div class="i-news">
+           <table>
+            <thead>
+              <tr>
+                <th class="saisinnews">最新ニュース</th>
+              </tr>
+            </thead>
+            <% @news.each do |n| %>
+            <tbody>
+              <tr>
+                <td class="i-newstitle">・<%= link_to(news_path(n.id),class: 's-link') do %>
+                        <%= n.news_title %></td>
+                        <% end %>
+                <td class="toukoubi"><%= n.created_at.strftime("%Y-%m-%d") %></td>
+
+              </tr>
+            </tbody>
+            <% end %>
+          </table>
+        </div>
+           <div class="i-twitter">
+            <a class="twitter-timeline" data-width="600" data-height="1000" href="https://twitter.com/yaseru9999/lists/list1?ref_src=twsrc%5Etfw">A Twitter List by yaseru9999</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
