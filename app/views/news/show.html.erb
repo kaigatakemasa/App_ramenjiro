@@ -1,2 +1,6 @@
-<%= @news.news_title %>
-<%= @news.latest_news %>
+<div class="news-main">
+<p class="nn-normal"><%= @news.news_title %></p>
+<p class="nn-created-at"><%= @news.created_at.strftime("%Y-%m-%d") %></p>
+<p class="n-normal"><%= @news.latest_news %></p>
+</div>
+

@@ -54,6 +54,34 @@
 	padding-bottom: 5px;
 }
 
+.news-main{
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+
+.nn-created-at{
+	text-align: right;
+    border-bottom: 3px solid black;
+    padding-right: 30px;
+    font-size: 22px;
+}
+
+.nn-normal{
+    word-wrap: break-word;
+    padding: 30px;
+    font-size: 40px;
+   
+}
+
+.n-normal{
+    word-wrap: break-word;
+    padding: 30px;
+
+
+}
+
 .ii-news{
 	display: block;
 	width: 90%;

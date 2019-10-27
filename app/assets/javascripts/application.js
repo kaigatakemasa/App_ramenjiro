@@ -60,7 +60,7 @@ $(function(){
     returnHeight = $(this).height(); //is-hideの高さを取得
   });
 });
-
+/*
 $(".grad-trigger").click(function(){ //トリガーをクリックしたら
                   console.log("444");
   if(!$(this).hasClass("is-show")) {
@@ -73,4 +73,3 @@ $(".grad-trigger").click(function(){ //トリガーをクリックしたら
   }
 });
 */
-

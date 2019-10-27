@@ -14,19 +14,19 @@
 }
 
 .image1 {
-background-image: url(二郎.jpg);
+background-image: url(/images/二郎.jpg);
 }
 .image2 {
-background-image: url(mita.jpg);
+background-image: url(/images/mita.jpg);
 }
 .image3 {
-background-image: url(hasi.jpg);
+background-image: url(/images/hasi.jpg);
 }
 .image4 {
-background-image: url(tamago.jpg);
+background-image: url(/images/tamago.jpg);
 }
 .image5 {
-background-image: url(nabejoro.jpg);
+background-image: url(/images/nabejoro.jpg);
 }
 
 
@@ -51,7 +51,7 @@ background-image: url(nabejoro.jpg);
 }
 
 .i-shopname{
-	
+
 }
 
 .s-link{
@@ -105,15 +105,30 @@ background-image: url(nabejoro.jpg);
 
 .s-main{
 	width: 100%;
-	height: 150px;
-	text-align: center;
+	height: 400px;
 	margin-top: 35px;
 	margin-bottom: 35px;
+	display: inline-block;
+
+
+}
+
+
+.s-infomation{
+	width: 45%;
+	margin-right: 7%;
+	padding-right: 10%;
+	height: 350px;
+	float: right;
+	text-align: left;
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
 }
 
 .s-name{
-	font-size: 40px;
-	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-top: 30px;
+	font-size: 45px;
+	padding-bottom: 25px;
 }
 .s-image{
 	width: 100%;
@@ -125,6 +140,8 @@ background-image: url(nabejoro.jpg);
 	height: auto;
 	margin: 0 auto;
 	margin-bottom: 50px;
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+	padding: 25px;
 }
 
 .s-map{
@@ -132,9 +149,17 @@ background-image: url(nabejoro.jpg);
 
 }
 
+.ss-inf{
+	padding-left: 40px;
+	padding-top: 20px;
+	font-size: 19px;
+	padding-bottom: 10px;
+}
+
 .twitter-timeline{
 	margin-left: 50px;
 	margin-right: 50px;
+	margin: 0 auto;
 }
 
 .n-p{
