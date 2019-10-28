@@ -43,7 +43,7 @@ private
 
 	def shop_params
 		params.require(:shop).permit(
-			:shop_name,:shop_address,:twitter_url,:map_url,:daytime_department,:night_department,:shop_information,:shop_image)
+			:shop_name,:shop_address,:twitter_url,:map_url,:daytime_department,:night_department,:shop_information,:shop_image,:postal_code,:regular_holiday)
 
 	end
 end
