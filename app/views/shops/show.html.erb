@@ -9,14 +9,18 @@
 
 <ul class="tab">
 <li class="active aaaaa">基本情報</li>
+<li>掟</li>
 <li>アクセス</li>
 <li>Twitter</li>
 </ul>
 
 <div class="tabContent active">
-	<p class="ss-inf">昼の部　<%= @shop.daytime_department %></p>
-	 		<p class="ss-inf">夜の部　<%= @shop.night_department %></p>
-	<%= simple_format(@shop.shop_information) %></div>
+	<p class="ss-inf">定休日  <%= @shop.regular_holiday %></p>
+	<p class="ss-inf">昼の部  <%= @shop.daytime_department %></p>
+	 		<p class="ss-inf">夜の部  <%= @shop.night_department %></p>
+	</div>
+
+<div class="tabContent"><%= simple_format(@shop.shop_information) %></div>
 
 <div class="tabContent">
 	<iframe class="s-map" src="<%= @shop.map_url %>" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -24,6 +28,8 @@
     </div>
 
 <div class="tabContent"><a class="twitter-timeline" data-width="850" data-height="600" href=<%= @shop.twitter_url %>>Tweets by <%= @shop.shop_name %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
 
 
 
