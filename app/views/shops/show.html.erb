@@ -1,7 +1,11 @@
 
  <div><%=attachment_image_tag @shop, :shop_image, fallback: "no_image.png", class: "s-image" %></div>
+ <% if signed_in? %>
+ <p class="hensyuu"><%= link_to "編集", edit_shop_path(@shop.id) %></p>
+ <% end %>
 
  <p class="s-name"><%= @shop.shop_name %></p>
+
 
 <ul class="tab">
 <li class="active aaaaa">基本情報</li>
@@ -16,7 +20,7 @@
 
 <div class="tabContent">
 	<iframe class="s-map" src="<%= @shop.map_url %>" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	 		<p class="ss-inf">〒<%= @shop.postal_code %>  <%= @shop.shop_address %></p></div>
+	 		<p class="ss-inf"><%= @shop.postal_code %>  <%= @shop.shop_address %></p></div>
     </div>
 
 <div class="tabContent"><a class="twitter-timeline" data-width="850" data-height="600" href=<%= @shop.twitter_url %>>Tweets by <%= @shop.shop_name %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>

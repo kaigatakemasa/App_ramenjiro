@@ -1,5 +1,3 @@
-
-
 <div>
 	<%= form_for @shop, url:shop_path(@shop) do |s| %>
 
@@ -11,6 +9,9 @@
 
 		    <p class="n-p"><label class="n-label">住所</label>
 		      <%= s.text_field :shop_address, class: "n-address" %></p>
+
+		      <p class="n-p"><label class="n-label">定休日</label>
+		          <%= s.text_field :regular_holiday, class: "n-holiday" %></p>
 
 		        <p class="n-p"><label class="n-label">昼の部</label>
 		          <%= s.text_field :daytime_department, class: "n-daytime" %></p>
@@ -34,8 +35,6 @@
 
 							      <% end %>
 	                            </div>
-
-
 
 
 

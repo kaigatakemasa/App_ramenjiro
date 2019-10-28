@@ -29,15 +29,18 @@ class NewsController < ApplicationController
 
 	def update
 		@news = News.find(params[:id])
-		if @news.update(news.params)
-		   redirect_to news_index_path
+		if @news.update(news_params)
+		   redirect_to news_path(@news.id)
 		else
 		   render :new
 		end
 	end
 
 	def destroy
-
+		@news = News.find(params[:id])
+		if @news.destroy
+		redirect_to news_index_path
+	    end
 	end
 
 private
