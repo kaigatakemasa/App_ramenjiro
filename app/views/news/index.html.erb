@@ -1,5 +1,5 @@
 <p class="jiro-news-title">ラーメン二郎最新ニュース</p>
-<p class="top-link"><%= link_to 'Top',shops_path, class: "top" %> | <%= link_to '',shops_path, class: "top" %></p>
+<p class="top-link"><%= link_to 'Top',shops_path,data: {"turbolinks"=>false}, class: "top" %> | <%= link_to '',shops_path, class: "top" %></p>
 <div class="main-news">
 	<% @newses.each do |n| %>
 	<div class="news-content">
