@@ -30,6 +30,7 @@
               <li class="av-list-item"><%= link_to 'News一覧', news_index_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
               <li class="av-list-item"><%= link_to '意見一覧', opinions_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
               <li class="av-list-item"><%= link_to '店舗新規作成', new_shop_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
+              <li class="av-list-item"><%= link_to 'News投稿', new_news_path,data: {"turbolinks"=>false},class: "link-to", :style=>"color:black;" %></li>
               <li class="av-list-item"><%= link_to 'ログアウト', destroy_admin_user_session_path, method: :delete, :style=>"color:black;",class: "link-to" %></li>
 
           <% else %>
